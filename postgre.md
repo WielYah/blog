@@ -260,7 +260,7 @@ Primary key, foreign key, unique, check
     
     Clase 4
     
-    - Funciones
+    - Funciones de conusltas? [link](https://www.postgresqltutorial.com/postgresql-string-functions/)
         
         ```sql
         select CAST(RANDOM()*1000 as INT)-- numero aleatorio desde el 0 a 999; el INT es para que no salgan decimales
