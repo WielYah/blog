@@ -16,16 +16,14 @@ RESTRICCIONES son: (se agregan  en las columnas de  las tablas)
 ```sql
 Primary key, foreign key, unique, check
 ```
-
+### Clase 1
 - Concatenar
-    
     ```sql
     select nombre||' '||ap_paterno as NombresApellidos from usuario
     ```
     
 
 - DISTINCT
-    
     ```sql
     ---muestra los distintos valores de las filas; es decir no muetra repetidos
     select distinct ap_paterno from usuario
@@ -39,9 +37,10 @@ Primary key, foreign key, unique, check
     ```
     
 - Foreign key
-    
+
     nos ayuda a relacionar 2 tablas por la clave principal, y la validez de la misma; es decir tiene que existir la clave foranea en su tabla  como clave principal
     
+
 - Modificar  la estructura de una tabla
     
     ```sql
@@ -132,7 +131,8 @@ Primary key, foreign key, unique, check
     fecha DATE DEFAULT '1900-01-01'--que al registrar y no envi datos de este campo por dfecto se llena con esa fecha
     )
     ```
-    
+-   ALTERAR UNA TABLA
+
     - Cascade y no action
         
         al crear mi tabla o al modificarla 
@@ -446,7 +446,7 @@ Primary key, foreign key, unique, check
 
 
 
-         - Tipos de datos compuestos
+    - Tipos de datos compuestos
 
         
         - condicionales con excepcion
