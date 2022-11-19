@@ -260,7 +260,7 @@ Primary key, foreign key, unique, check
     
     Clase 4
     
-    - s
+    - Funciones
         
         ```sql
         select CAST(RANDOM()*1000 as INT)-- numero aleatorio desde el 0 a 999; el INT es para que no salgan decimales
