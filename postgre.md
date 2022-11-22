@@ -537,6 +537,9 @@ Primary key, foreign key, unique, check
             ```
             <a href="https://www.youtube.com/watch?v=LPtF87C3LOA link" target="_blank">Link del video</a>
 
+            <a href="    https://www.delftstack.com/es/howto/postgres/postgres-escape-single-quote/#escapar-de-una-comilla-simple-usando-otra-comilla-simple-en-postgresql " target="_blank">Link del blog</a>
+
+          
                
             ```sql
                /* Expresiones Regulares*/
@@ -548,7 +551,11 @@ Primary key, foreign key, unique, check
                 insert into categoria values(default,1,'sss''ss',null,null,'A',null);
                 -- se guarda asi sss'ss
 
-                --barra invertida  '\' no se puede csmr
+                --barra invertida  '\'
+                   insert into moneda2 values(default,E'\'select*from usuario',1); --para cada '/*  tiene que ser la barra invertida*/
+
+                --Con $$ $$ eso hace que sean comentarios?
+                insert into moneda2 values(default,$$'select*from usuario'--$$,1);
 
 
             ```
